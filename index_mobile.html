@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Web</title>
+    <link rel="stylesheet" href="style_mobile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2afb766df777b1a165cdc666cc8929a0&libraries=services"></script>
+</head>
+<body>
+    <div id="container">
+        <img id="logo" src="logo.svg" alt="Logo">
+        <button id="menu-button"><img src="menu.svg" alt="Menu"></button>
+        <img id="cat-image" src="img_cat.svg" alt="Cat Image">
+        <div id="btn-container">
+            <button class="btn" onclick="handleClick()">Download</button>
+        </div>
+        <div id="main_text-container">
+            <p class="main_text">Lorem Ipsum is simply<br>dummy text<br>of the printing and</p>
+        </div>
+        <div id="sub_text-container">
+            <p class="sub_text">Lorem Ipsum is simply dummy text<br>of the printing and typesetting industry.<br> 
+                Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s,<br>when an unknown</p>
+        </div>
+    </div>
+    <img id="img4" src="img_4.svg" alt="Image 4">
+    <div id="main_text-container2">
+        <p class="main_text2">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</p>
+    </div>
+    <div id="sub_text-container2">
+        <p class="sub_text">Lorem Ipsum is simply dummy text of the printing<br>and typesetting industry.</p>
+    </div>
+    <div id="main_text-container3">
+        <p class="main_text3" style="text-align: center">dummy text of the printing<br>and dummy</p>
+    </div>
+    <div id="sub_text-container3">
+        <p class="sub_text2" style="text-align: center">Lorem Ipsum is simply <span id="highlight">dummy text</span> of the<br>printing and typesetting industry.<br>
+            Lorem Ipsum has been the industry's<br>standard dummy text ever since the 1500s,<br>when an unknown</p>
+    </div>
+    <div id="image_container">
+        <img src="img_1.svg" alt="Image 1">
+        <img src="img_2.svg" alt="Image 2">
+        <img src="img_3.svg" alt="Image 3">
+        <img src="img_5.svg" alt="Image 5">
+        <img src="img_6.svg" alt="Image 6">
+        <img src="img_7.svg" alt="Image 7">
+    </div>
+    <div id="more-container">
+        <p class="mid_text" style="text-align: center">Continue exploring HODU</p>
+        <button class="morebtn" onclick="morehandleClick()">Show more</button>
+    </div>
+    <hr id="border">
+    <div id="map_text-container">
+        <p class="main_text4">Where you’ll be</p>
+    </div>
+    <div id="sub_map_text-container">
+        <p class="sub_text3">330, Cheomdan-ro, Jeju-si, Jeju-do,<br>Republic of Korea</p>
+    </div>
+    <div id="map-container">
+        <div id="map"></div>
+    </div>
+    <img id="img8" src="img_9.svg" alt="Image 8">
+    <div id="footer">
+        <img id="logo2" src="logo.svg" alt="Logo2">
+        <div id="footer-icon">
+            <button class="blog" onclick="blog()"><img src="blog.svg" alt="Blog"></button>
+            <button class="insta" onclick="insta()"><img src="instagram.svg" alt="Insta"></button>
+            <button class="facebook" onclick="facebook()"><img src="facebook.svg" alt="Facebook"></button>
+            <button class="youtube" onclick="youtube()"><img src="youtube.svg" alt="Youtube"></button>
+        </div>
+        <div id="footer-menu">
+            <p class="sub_text" style="text-align:right">About</p>
+            <p class="sub_text" style="text-align:right">Blog</p>
+            <p class="sub_text" style="text-align:right">Support</p>
+            <p class="sub_text" style="text-align:right">Terms of Use</p>
+        </div>
+    </div>
+    <div id="subscribe-container">
+        <div id="subscribe-main-text">
+            <p class="main_text5" style="color: white;">Subscribe to our<br>Blog post</p>
+        </div>
+        <div id="subscribe-sub-text">
+            <p class="sub_text" style="color:#F2E9D8;">Lorem Ipsum is simply dummy text of the<br>printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's<br>standard dummy text </p>
+        </div>
+        <div id="email-container">
+            <img src="mail.svg" id="mail-icon" alt="Mail Icon">
+            <input type="email" id="email-input" placeholder="Enter your email">           
+        </div>
+        <button id="subscribe-btn">Subscribe</button>
+    </div>
+    <div id="popup-overlay">
+        <div id="popup">
+            <p>Thank you for subscribing!</p>
+            <button id="close-popup-btn">Close</button>
+        </div>
+    </div>
+    <div id="side-nav">
+        <div id="side">
+            <button id="back"></button>
+            <p>Home</p>
+            <p>About</p>
+            <p>Support</p>
+            <div id="btn-container">
+                <button class="btn" onclick="handleClick()">Download</button>
+            </div>
+        </div>
+    </div>
+    <script src="script_mobile.js"></script>
+    
+</body>
+</html>

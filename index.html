@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반응형 배경 및 이미지 배치</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Redirect Based on Screen Width</title>
+    <script>
+        window.onload = function() {
+            if (window.innerWidth >= 700) {
+                window.location.href = 'index_PC.html';
+            } else {
+                window.location.href = 'index_mobile.html';
+            }
+        };
+
+        // 이 코드는 화면 크기가 변경될 때에도 새로고침 없이 반응할 수 있도록 합니다.
+        window.onresize = function() {
+            if (window.innerWidth >= 700) {
+                window.location.href = 'index_PC.html';
+            } else {
+                window.location.href = 'index_mobile.html';
+            }
+        };
+    </script>
 </head>
 <body>
-    <div id="container">
-        <img id="cat-image" src="img_cat.svg" alt="Cat Image">
-    </div>
-    <img id="img4" src="img_4.svg" alt="Image 4">
-    <div id="image-container">
-        <img src="img_1.svg" alt="Image 1">
-        <img src="img_2.svg" alt="Image 2">
-        <img src="img_3.svg" alt="Image 3">
-    </div>
-    <div id="image-container2">
-        <img src="img_5.svg" alt="Image 1">
-        <img src="img_6.svg" alt="Image 2">
-        <img src="img_7.svg" alt="Image 3">
-    </div>
-    <script src="script.js"></script>
+    <p>Redirecting based on screen width...</p>
 </body>
 </html>

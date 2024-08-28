@@ -1,0 +1,234 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#container {
+    position: absolute;
+    background-color: #F2E9D8;
+    overflow: hidden;
+}
+
+#subscribe-container {
+    position: absolute;
+    background-color: #263140;
+    overflow: hidden;
+}
+
+#cat-image, #img4, #text-container, #logo, .btn , #img8, #logo2, .insta, .blog, .youtube, .facebook{
+    position: absolute;
+}
+
+#image-container, #image-container2 {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* 자식 요소들을 수평 중앙에 정렬합니다 */
+    width: 100%;
+    height: 100%;
+}
+
+#image-container img, #image-container2 img{
+    width: 378px;
+    height: 378px;
+    border-radius: 30px;
+}
+
+
+
+#text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.sub_text {
+    text-align: left;
+}
+
+.main_text2 {
+    text-align: left;
+}
+
+#btn-container, #main_text-container, #sub_text-container, #btn-container2, #main_text-container2, #sub_text-container2, #main_text-container3, #sub_text-container3, #more-container, #border, #map_text-container, #sub_map_text-container, #map-container, #footer, #footer-icon, #subscribe-main-text, #subscribe-sub-text{
+    position: absolute; /* 컨테이너 내부에서 절대 위치 지정 */
+    display: flex;
+    align-items: center;
+}
+
+#border {
+    background-color : #C4C4C4;
+    border: none;
+
+}
+
+#more-container{
+    align-items:center;
+    flex-direction: column;
+}
+
+.btn, .morebtn {
+    background-color: #D97652; /* 버튼 배경색 */
+    color: white; /* 텍스트 색상 */
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 모양 */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+}
+
+.blog, .insta, .facebook, .youtube {
+    background-color: #D97652; /* 버튼 배경색 */
+    border-radius: 50%;
+    border: none; /* 테두리 없음 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 모양 */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+}
+
+.blog img, .insta img, .facebook img, .youtube img {
+    position: absolute;
+    width: 24px; /* 기본 너비 */
+    height: 24px; /* 기본 높이 */
+    left: 50%; /* 가운데 정렬 */
+    top: 50%; /* 가운데 정렬 */
+    transform: translate(-50%, -50%);
+}
+
+
+
+#highlight {
+    color: #D97652;
+    font-weight: 700;
+}
+
+#scroll-top-btn {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 24px;
+    right: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#scroll-top-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+#scroll-top-btn.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#scroll-top-btn img.active {
+    content: url('scroll-top-btn_active.svg');
+}
+
+#email-container {
+    position: absolute;
+    width: 530px; /* 1920 기준 */
+    height: 60px; /* 1920 기준 */
+    top: 70px; /* 1920 기준 */
+    left: 692px; /* 1920 기준 */
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #FFF;
+    opacity: 1; /* 변경됨 */
+}
+
+#mail-icon {
+    width: 24px; /* 1920 기준 */
+    height: 24px; /* 1920 기준 */
+    margin-left: 28px; /* 1920 기준 */
+}
+
+#email-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding-left: 16px; /* 1920 기준, 아이콘과 필드 사이 간격 */
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 400;
+    font-size: 16px; /* 1920 기준 */
+    margin-right: 150px; /* 버튼과의 간격 설정 */
+}
+
+#subscribe-btn {
+    position: absolute;
+    width: 135px; /* 1920 기준 */
+    height: 50px; /* 1920 기준 */
+    left: 389px; /* 1920 기준 */
+    background-color: #D97652; /* 버튼 배경색 */
+    color: white; /* 텍스트 색상 */
+    border: none; /* 테두리 없음 */
+    border-radius: 40px; /* 둥근 모서리 */
+    cursor: pointer; /* 마우스를 올렸을 때 커서 모양 */
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 16px; /* 1920 기준 */
+    transition: background-color 0.3s ease; /* 배경색 전환 효과 */
+}
+
+/* 팝업 오버레이 */
+#popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none; /* 기본적으로 숨김 */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 팝업 스타일 */
+#popup {
+    width: 600px; /* 1920 기준 */
+    height: 400px; /* 1920 기준 */
+    background: url('popup_background.svg') no-repeat center center;
+    background-size: cover;
+    border-radius: 30px; /* 1920 기준 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+#popup p {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 20px; /* 고정 크기 */
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#close-popup-btn {
+    background-color: #D97652;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Pretendard', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover, .morebtn:hover, .blog:hover, .insta:hover, .facebook:hover, .youtube:hover, #subscribe-btn:hover,#close-popup-btn:hover {
+    background-color: #45a049; /* 마우스를 올렸을 때 배경색 변경 */
+}
