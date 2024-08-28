@@ -8,7 +8,11 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
+<<<<<<< HEAD
             "file": "c:\\Users\\alexis\\Desktop\\EST\\Front1\\index.html"
+=======
+            "url": "http://localhost:8000"
+>>>>>>> 835ac88997c07f7e1ddb53e3ad8cd28296f58c30
         }
     ]
 }

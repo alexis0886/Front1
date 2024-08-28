@@ -336,6 +336,8 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollTopBtn.style.height = `${(50 / 900) * containerHeight}px`;
         scrollTopBtn.style.right = `${(24 / 1920) * containerWidth}px`;
         scrollTopBtn.style.bottom = `${(24 / 900) * containerHeight}px`;
+        subscribeBtn.style.fontSize = `${(16 / 1920) * containerWidth}px`;
+        subscribeBtn.style.lineHeight = `${(20 / 1920) * containerWidth}px`;
 
         function isValidEmail(email) {
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
