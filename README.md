@@ -1,10 +1,10 @@
-#FRONTEND
+**FRONTEND**
 
 ##1.사용 언어
 HTML, CSS, JAVASCRIPT
 
 ##2.작동 방식
-index.html 을 읽어와서 해상도 확인 후 PC or Mobile 버전 접속
+index.html 을 읽어와서 해상도 확인 후 PC or Mobile 버전 접속                
 
 ##3.PC
 반응형으로 작동시키기 위해 대부분의 코드를 JS 로 작성
