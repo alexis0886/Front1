@@ -8,6 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2afb766df777b1a165cdc666cc8929a0&libraries=services"></script>
     <script defer src="script_PC.js"></script>
+    <script>
+        function redirectToAppropriatePage() {
+            if (window.innerWidth < 700) {
+                window.location.href = 'index_mobile.html';
+            } 
+        }
+
+        window.onload = redirectToAppropriatePage;
+
+        window.onresize = function() {
+            redirectToAppropriatePage();
+        };
+    </script>
 </head>
 <body>
     <div id="header">

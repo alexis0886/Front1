@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Based on Screen Width</title>
     <script>
-        window.onload = function() {
+        function redirectToAppropriatePage() {
             if (window.innerWidth >= 700) {
                 window.location.href = 'index_PC.html';
             } else {
                 window.location.href = 'index_mobile.html';
             }
-        };
+        }
+
+        window.onload = redirectToAppropriatePage;
 
         window.onresize = function() {
-            if (window.innerWidth >= 700) {
-                window.location.href = 'index_PC.html';
-            } else {
-                window.location.href = 'index_mobile.html';
-            }
+            redirectToAppropriatePage();
         };
     </script>
 </head>
