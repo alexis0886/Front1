@@ -353,12 +353,19 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.style.borderRadius = `${borderRadius}px`;
         }
     
+        emailInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                subscribeBtn.click();
+            }
+        });
+    
         subscribeBtn.addEventListener('click', function() {
             const email = emailInput.value;
     
             if (isValidEmail(email)) {
                 adjustPopupSize();
                 popupOverlay.style.display = 'flex';
+                emailInput.value = '';
             } else {
                 alert('이메일 형식이 올바르지 않습니다');
             }

@@ -334,8 +334,6 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollTopBtn.style.height = `${(50 / 900) * containerHeight}px`;
         scrollTopBtn.style.right = `${(24 / 1920) * containerWidth}px`;
         scrollTopBtn.style.bottom = `${(24 / 900) * containerHeight}px`;
-        subscribeBtn.style.fontSize = `${(16 / 1920) * containerWidth}px`;
-        subscribeBtn.style.lineHeight = `${(20 / 1920) * containerWidth}px`;
 
         function isValidEmail(email) {
             const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -355,12 +353,19 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.style.borderRadius = `${borderRadius}px`;
         }
     
+        emailInput.addEventListener('keyup', function(event) {
+            if (event.key === 'Enter') {
+                subscribeBtn.click();
+            }
+        });
+    
         subscribeBtn.addEventListener('click', function() {
             const email = emailInput.value;
     
             if (isValidEmail(email)) {
                 adjustPopupSize();
                 popupOverlay.style.display = 'flex';
+                emailInput.value = '';
             } else {
                 alert('이메일 형식이 올바르지 않습니다');
             }
