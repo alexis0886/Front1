@@ -8,7 +8,7 @@ HTML, CSS, JAVASCRIPT
 
 **2.작동 방식**
 
-index.html 을 읽어와서 해상도 확인 후 PC or Mobile 버전 접속                
+index.html 을 읽어와서 가로 기준 해상도 확인 후 PC or Mobile 버전 접속                
 
 **3.PC**
 
