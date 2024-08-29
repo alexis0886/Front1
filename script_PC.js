@@ -65,8 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
         header.style.width = `${containerWidth}px`;
         header.style.height = `${(100/900)*containerHeight}px`;
         
-
-        // 기존 컨테이너 및 이미지 크기 설정
         container.style.width = `${containerWidth}px`;
         container.style.height = `${(800/900)*containerHeight}px`;
         container.style.paddingTop = `${(100 / 900) * containerHeight}px`;
@@ -120,9 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnContainer2.style.left = `${(320 / 1920) * containerWidth}px`;
         btnContainer2.style.opacity = 1;  
 
-        // 버튼 텍스트 스타일 동적 설정
         buttons.forEach(button => {
-            // 버튼 스타일 동적 조정
             button.style.fontFamily = 'Pretendard, sans-serif';
             button.style.fontWeight = 700;
             button.style.width = `${(140 / 1920) * containerWidth}px`;
@@ -131,7 +127,6 @@ document.addEventListener("DOMContentLoaded", function() {
             button.style.fontSize = `${(16 / 1920) * containerWidth}px`;
             button.style.lineHeight = `${(20 / 1920) * containerWidth}px`;
             
-            // 버튼 클릭 시 이벤트 처리
             button.addEventListener('click', handleClick);
         });
 
@@ -176,20 +171,20 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext.style.fontSize = `${(48 / 1920) * containerWidth}px`;
         maintext.style.fontWeight = 700;
         maintext.style.lineHeight = `${(60 / 1920) * containerWidth}px`;
-        maintext.style.whiteSpace = 'nowrap'; // 줄바꿈 방지      
+        maintext.style.whiteSpace = 'nowrap';   
 
         maintext3.style.fontFamily = 'Pretendard, sans-serif';
         maintext3.style.fontSize = `${(48 / 1920) * containerWidth}px`;
         maintext3.style.fontWeight = 700;
         maintext3.style.lineHeight = `${(60 / 1920) * containerWidth}px`;
-        maintext3.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        maintext3.style.whiteSpace = 'nowrap';
         maintext3.style.color = "#D97652";
 
         midtext.style.fontFamily = 'Pretendard, sans-serif';
         midtext.style.fontSize = `${(24 / 1920) * containerWidth}px`;
         midtext.style.fontWeight = 700;
         midtext.style.lineHeight = `${(30 / 1920) * containerWidth}px`;
-        midtext.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        midtext.style.whiteSpace = 'nowrap';
 
         morebtn.style.fontFamily = 'Pretendard, sans-serif';
         morebtn.style.fontWeight = 700;
@@ -248,7 +243,6 @@ document.addEventListener("DOMContentLoaded", function() {
         footerIcon.style.height = `${(42 / 900) * containerHeight}px`;
         footerIcon.style.top = `${(58 / 900) * containerHeight}px`;
 
-        // 각 버튼의 위치 설정
         const blogButton = document.querySelector('.blog');
         const instaButton = document.querySelector('.insta');
         const facebookButton = document.querySelector('.facebook');
@@ -263,12 +257,10 @@ document.addEventListener("DOMContentLoaded", function() {
         youtubeButton.style.left = `${(1558 / 1920) * containerWidth}px`;
         youtubeButton.addEventListener('click', youtube);
 
-        // 모든 버튼의 top과 크기 설정
         [blogButton, instaButton, facebookButton, youtubeButton].forEach(button => {
             button.style.width = `${(42 / 1920) * containerWidth}px`;
             button.style.height = `${(42 / 900) * containerHeight}px`;
 
-            // 이미지 크기 설정
             const img = button.querySelector('img');
             img.style.width = `${(24 / 1920) * containerWidth}px`;
             img.style.height = `${(24 / 900) * containerHeight}px`;
@@ -300,8 +292,8 @@ document.addEventListener("DOMContentLoaded", function() {
         subtext.style.fontFamily = 'Pretendard, sans-serif';
         subtext.style.fontSize = `${(14 / 1920) * containerWidth}px`;
         subtext.style.fontWeight = 400;
-        subtext.style.lineHeight = `${(18 / 1920) * containerWidth}px`; // line-height도 조정
-        subtext.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        subtext.style.lineHeight = `${(18 / 1920) * containerWidth}px`;
+        subtext.style.whiteSpace = 'nowrap';
 
         images.forEach(img => {
             img.style.width = `${(378 / 1920) * containerWidth}px`;
@@ -314,7 +306,7 @@ document.addEventListener("DOMContentLoaded", function() {
             text.style.fontSize = `${(36 / 1920) * containerWidth}px`;
             text.style.fontWeight = 700;
             text.style.lineHeight = `${(45 / 1920) * containerWidth}px`;
-            text.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+            text.style.whiteSpace = 'nowrap';
 
         });
 
@@ -338,7 +330,6 @@ document.addEventListener("DOMContentLoaded", function() {
         subscribeBtn.style.fontSize = `${(16 / 1920) * containerWidth}px`;
         subscribeBtn.style.borderRadius = `${(40 / 1920) * containerWidth}px`;
         
-        // Scroll Top Button 크기 및 위치 설정
         scrollTopBtn.style.width = `${(50 / 1920) * containerWidth}px`;
         scrollTopBtn.style.height = `${(50 / 900) * containerHeight}px`;
         scrollTopBtn.style.right = `${(24 / 1920) * containerWidth}px`;
@@ -351,7 +342,6 @@ document.addEventListener("DOMContentLoaded", function() {
             return emailPattern.test(email);
         }
     
-        // 팝업 크기 및 위치 조정 함수
         function adjustPopupSize() {
             const screenWidth = window.innerWidth;
             const screenHeight = window.innerHeight;
@@ -365,28 +355,23 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.style.borderRadius = `${borderRadius}px`;
         }
     
-        // Subscribe 버튼 클릭 이벤트
         subscribeBtn.addEventListener('click', function() {
             const email = emailInput.value;
     
             if (isValidEmail(email)) {
-                // 이메일 형식이 올바르면 팝업 표시
-                adjustPopupSize();  // 팝업 크기 조정
+                adjustPopupSize();
                 popupOverlay.style.display = 'flex';
             } else {
-                // 이메일 형식이 올바르지 않으면 알림 표시
                 alert('이메일 형식이 올바르지 않습니다');
             }
         });
     
-        // 팝업 닫기 버튼 클릭 이벤트
         closePopupBtn.addEventListener('click', function() {
             popupOverlay.style.display = 'none';
         });
 
         window.addEventListener('resize', adjustPopupSize);
 
-        // 스크롤 이벤트에 따른 동작 정의
         window.addEventListener('scroll', function() {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
@@ -398,7 +383,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 scrollTopImg.src = 'scroll-top-btn.svg';
             }
     
-            // Scroll Top Button과 footer 간격 유지
             const footerRect = footer.getBoundingClientRect();
             const windowHeight = window.innerHeight;
             const btnBottomDistance = footerRect.top - windowHeight + 24;
@@ -410,7 +394,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Scroll Top Button 클릭 이벤트
         scrollTopBtn.addEventListener('click', function() {
             window.scrollTo({
                 top: 0,
@@ -418,13 +401,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         });
 
-        const baseFontSize = (16 / 1920) * containerWidth; // 폰트 크기를 화면 너비에 따라 조정
+        const baseFontSize = (16 / 1920) * containerWidth;
         subtexts.forEach(text => {
             text.style.fontFamily = 'Pretendard, sans-serif';
             text.style.fontSize = `${baseFontSize}px`;
             text.style.fontWeight = 400;
-            text.style.lineHeight = `${(20 / 1920) * containerWidth}px`; // line-height도 조정
-            text.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+            text.style.lineHeight = `${(20 / 1920) * containerWidth}px`;
+            text.style.whiteSpace = 'nowrap';
         });
     }
 
@@ -453,26 +436,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function initKakaoMap() {
-        var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
+        var mapContainer = document.getElementById('map');
         var mapOption = {
-            center: new kakao.maps.LatLng(33.442337972, 126.571449734542), // 지도의 중심 좌표 (제주도 예시)
-            level: 4 // 지도의 확대 레벨
+            center: new kakao.maps.LatLng(33.442337972, 126.571449734542),
+            level: 4
         }; 
     
-        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption);
     
-        // 마커를 표시할 위치와 title 변수
         var markerPosition = new kakao.maps.LatLng(33.442337972, 126.571449734542); 
         var marker = new kakao.maps.Marker({
             position: markerPosition
         });
-        marker.setMap(map); // 마커를 지도에 표시합니다
+        marker.setMap(map);
     
-        // 줌 컨트롤을 생성하여 지도에 추가합니다
         var zoomControl = new kakao.maps.ZoomControl();
         map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     
-        // 지도/스카이뷰 전환 컨트롤을 생성하여 지도에 추가합니다
         var mapTypeControl = new kakao.maps.MapTypeControl();
         map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
     

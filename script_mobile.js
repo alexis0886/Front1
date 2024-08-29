@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", function() {
     function adjustSizes() {
         const screenWidth = window.innerWidth;
 
-        // 기존 컨테이너 및 이미지 크기 설정
         container.style.width = `${screenWidth}px`;
         container.style.height = `${(794 / 390)*screenWidth}px`;
 
@@ -80,9 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         btnContainer.style.left = `${(135 / 390) * screenWidth}px`;
         btnContainer.style.opacity = 1;     
 
-        // 버튼 텍스트 스타일 동적 설정
         buttons.forEach(button => {
-            // 버튼 스타일 동적 조정
             button.style.fontFamily = 'Pretendard, sans-serif';
             button.style.fontWeight = 700;
             button.style.width = `${(114 / 390) * screenWidth}px`;
@@ -91,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
             button.style.fontSize = `${(14 / 390) * screenWidth}px`;
             button.style.lineHeight = `${(18 / 390) * screenWidth}px`;
             
-            // 버튼 클릭 시 이벤트 처리
             button.addEventListener('click', handleClick);
         });
 
@@ -110,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext.style.fontSize = `${(24 / 390) * screenWidth}px`;
         maintext.style.fontWeight = 700;
         maintext.style.lineHeight = `${(30 / 390) * screenWidth}px`;
-        maintext.style.whiteSpace = 'nowrap'; // 줄바꿈 방지    
+        maintext.style.whiteSpace = 'nowrap';  
 
 
 
@@ -136,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext2.style.fontSize = `${(24 / 390) * screenWidth}px`;
         maintext2.style.fontWeight = 700;
         maintext2.style.lineHeight = `${(30 / 390) * screenWidth}px`;
-        maintext2.style.whiteSpace = 'nowrap'; // 줄바꿈 방지   
+        maintext2.style.whiteSpace = 'nowrap';
 
         mtContainer3.style.width = `${(326 / 390) * screenWidth}px`;
         mtContainer3.style.height = `${(60 / 390) * screenWidth}px`;
@@ -153,7 +149,7 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext3.style.fontSize = `${(24 / 390) * screenWidth}px`;
         maintext3.style.fontWeight = 700;
         maintext3.style.lineHeight = `${(30 / 390) * screenWidth}px`;
-        maintext3.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        maintext3.style.whiteSpace = 'nowrap';
         maintext3.style.color = "#D97652";
 
         
@@ -177,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function() {
         midtext.style.fontSize = `${(18 / 390) * screenWidth}px`;
         midtext.style.fontWeight = 700;
         midtext.style.lineHeight = `${(24 / 390) * screenWidth}px`;
-        midtext.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        midtext.style.whiteSpace = 'nowrap';
 
         morebtn.style.fontFamily = 'Pretendard, sans-serif';
         morebtn.style.fontWeight = 700;
@@ -209,19 +205,19 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext4.style.fontSize = `${(24 / 390) * screenWidth}px`;
         maintext4.style.fontWeight = 700;
         maintext4.style.lineHeight = `${(30 / 390) * screenWidth}px`;
-        maintext4.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        maintext4.style.whiteSpace = 'nowrap';
 
         subtext2.style.fontFamily = 'Pretendard, sans-serif';
         subtext2.style.fontSize = `${(16 / 390) * screenWidth}px`;
         subtext2.style.fontWeight = 400;
         subtext2.style.lineHeight = `${(20 / 390) * screenWidth}px`;
-        subtext2.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        subtext2.style.whiteSpace = 'nowrap';
 
         subtext3.style.fontFamily = 'Pretendard, sans-serif';
         subtext3.style.fontSize = `${(16 / 390) * screenWidth}px`;
         subtext3.style.fontWeight = 400;
         subtext3.style.lineHeight = `${(20 / 390) * screenWidth}px`;
-        subtext3.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+        subtext3.style.whiteSpace = 'nowrap';
 
         mapContainer.style.width = `${(326 / 390) * screenWidth}px`;
         mapContainer.style.height = `${(132 / 390) * screenWidth}px`;
@@ -258,7 +254,6 @@ document.addEventListener("DOMContentLoaded", function() {
         footerIcon.style.height = `${(32 / 390) * screenWidth}px`;
         footerIcon.style.top = `${(122 / 390) * screenWidth}px`;
 
-        // 각 버튼의 위치 설정
         const blogButton = document.querySelector('.blog');
         const instaButton = document.querySelector('.insta');
         const facebookButton = document.querySelector('.facebook');
@@ -277,7 +272,6 @@ document.addEventListener("DOMContentLoaded", function() {
             button.style.width = `${(32 / 390) * screenWidth}px`;
             button.style.height = `${(32 / 390) * screenWidth}px`;
 
-            // 이미지 크기 설정
             const img = button.querySelector('img');
             img.style.width = `${(18.29 / 390) * screenWidth}px`;
             img.style.height = `${(18.29 / 390) * screenWidth}px`;
@@ -331,15 +325,15 @@ document.addEventListener("DOMContentLoaded", function() {
         maintext5.style.fontSize = `${(24 / 390) * screenWidth}px`;
         maintext5.style.fontWeight = 700;
         maintext5.style.lineHeight = `${(30 / 390) * screenWidth}px`;
-        maintext5.style.whiteSpace = 'nowrap'; // 줄바꿈 방지 
+        maintext5.style.whiteSpace = 'nowrap';
 
-        const baseFontSize = (14 / 390) * screenWidth; // 폰트 크기를 화면 너비에 따라 조정
+        const baseFontSize = (14 / 390) * screenWidth;
         subtexts.forEach(text => {
             text.style.fontFamily = 'Pretendard, sans-serif';
             text.style.fontSize = `${baseFontSize}px`;
             text.style.fontWeight = 400;
-            text.style.lineHeight = `${(18 / 390) * screenWidth}px`; // line-height도 조정
-            text.style.whiteSpace = 'nowrap'; // 줄바꿈 방지
+            text.style.lineHeight = `${(18 / 390) * screenWidth}px`;
+            text.style.whiteSpace = 'nowrap';
         });
 
         function isValidEmail(email) {
@@ -359,16 +353,13 @@ document.addEventListener("DOMContentLoaded", function() {
             popup.style.borderRadius = `${borderRadius}px`;
         }
     
-        // Subscribe 버튼 클릭 이벤트
         subscribeBtn.addEventListener('click', function() {
             const email = emailInput.value;
     
             if (isValidEmail(email)) {
-                // 이메일 형식이 올바르면 팝업 표시
-                adjustPopupSize();  // 팝업 크기 조정
+                adjustPopupSize();
                 popupOverlay.style.display = 'flex';
             } else {
-                // 이메일 형식이 올바르지 않으면 알림 표시
                 alert('이메일 형식이 올바르지 않습니다');
             }
         });
@@ -419,26 +410,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function initKakaoMap() {
-        var mapContainer = document.getElementById('map'); // 지도를 표시할 div 
+        var mapContainer = document.getElementById('map');
         var mapOption = {
-            center: new kakao.maps.LatLng(33.442337972, 126.571449734542), // 지도의 중심 좌표 (제주도 예시)
-            level: 4 // 지도의 확대 레벨
+            center: new kakao.maps.LatLng(33.442337972, 126.571449734542),
+            level: 4
         }; 
     
-        var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+        var map = new kakao.maps.Map(mapContainer, mapOption);
     
         // 마커를 표시할 위치와 title 변수
         var markerPosition = new kakao.maps.LatLng(33.442337972, 126.571449734542); 
         var marker = new kakao.maps.Marker({
             position: markerPosition
         });
-        marker.setMap(map); // 마커를 지도에 표시합니다
+        marker.setMap(map);
     
-        // 줌 컨트롤을 생성하여 지도에 추가합니다
         var zoomControl = new kakao.maps.ZoomControl();
         map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
     
-        // 지도/스카이뷰 전환 컨트롤을 생성하여 지도에 추가합니다
         var mapTypeControl = new kakao.maps.MapTypeControl();
         map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
     
