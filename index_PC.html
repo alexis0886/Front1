@@ -10,9 +10,8 @@
     <script defer src="script_PC.js"></script> <!-- JavaScript 파일 연결 -->
 </head>
 <body>
-    <div id="container">
+    <div id="header">
         <img id="logo" src="logo.svg" alt="Logo">
-        <img id="cat-image" src="img_cat.svg" alt="Cat Image">
         <div id="text-container">
             <p class="sub_text">Home</p>
             <p class="sub_text">About</p>
@@ -21,89 +20,94 @@
         <div id="btn-container">
             <button class="btn" onclick="handleClick()">Download</button>
         </div>
-        <div id="main_text-container">
-            <p class="main_text">Lorem Ipsum is simply<br>dummy text of the printing and</p>
+    </div>
+    <div id="content-wrapper">
+        <div id="container">       
+            <img id="cat-image" src="img_cat.svg" alt="Cat Image">      
+            <div id="main_text-container">
+                <p class="main_text">Lorem Ipsum is simply<br>dummy text of the printing and</p>
+            </div>
+            <div id="sub_text-container">
+                <p class="sub_text">Lorem Ipsum is simply dummy text of the printing and<br>
+                    typesetting industry.<br> 
+                    Lorem Ipsum has been the industry's standard dummy text<br>
+                    ever since the 1500s, when an unknown</p>
+            </div>
+            <div id="btn-container2">
+                <button class="btn" onclick="handleClick()">Download</button>
+            </div>
         </div>
-        <div id="sub_text-container">
-            <p class="sub_text">Lorem Ipsum is simply dummy text of the printing and<br>
-                typesetting industry.<br> 
-                Lorem Ipsum has been the industry's standard dummy text<br>
-                ever since the 1500s, when an unknown</p>
+        <img id="img4" src="img_4.svg" alt="Image 4">
+        <div id="main_text-container2">
+            <p class="main_text2">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</p>
         </div>
-        <div id="btn-container2">
-            <button class="btn" onclick="handleClick()">Download</button>
+        <div id="sub_text-container2">
+            <p class="sub_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
         </div>
-    </div>
-    <img id="img4" src="img_4.svg" alt="Image 4">
-    <div id="main_text-container2">
-        <p class="main_text2">Lorem Ipsum is simply<br>dummy text of the printing<br>and dummy text</p>
-    </div>
-    <div id="sub_text-container2">
-        <p class="sub_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-    </div>
-    <div id="main_text-container3">
-        <p class="main_text3">dummy text of the printing and dummy</p>
-    </div>
-    <div id="sub_text-container3">
-        <p class="sub_text" style="text-align: center">Lorem Ipsum is simply <span id="highlight">dummy text</span> of the printing and typesetting industry.<br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
-    </div>
-    <div id="image-container">
-        <img src="img_1.svg" alt="Image 1">
-        <img src="img_2.svg" alt="Image 2">
-        <img src="img_3.svg" alt="Image 3">
-    </div>
-    <div id="image-container2">
-        <img src="img_5.svg" alt="Image 5">
-        <img src="img_6.svg" alt="Image 6">
-        <img src="img_7.svg" alt="Image 7">
-    </div>
-    <div id="more-container">
-        <p class="mid_text" style="text-align: center">Continue exploring HODU</p>
-        <button class="morebtn" onclick="morehandleClick()">Show more</button>
-    </div>
-    <hr id="border">
-    <div id="map_text-container">
-        <p class="main_text2">Where you’ll be</p>
-    </div>
-    <div id="sub_map_text-container">
-        <p class="sub_text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
-    </div>
-    <div id="map-container">
-        <div id="map"></div>
-    </div>
-    <img id="img8" src="img_8.svg" alt="Image 8">
-    <div id="footer">
-        <img id="logo2" src="logo.svg" alt="Logo2">
-        <div id="footer-icon">
-            <button class="blog" onclick="blog()"><img src="blog.svg" alt="Blog"></button>
-            <button class="insta" onclick="insta()"><img src="instagram.svg" alt="Insta"></button>
-            <button class="facebook" onclick="facebook()"><img src="facebook.svg" alt="Facebook"></button>
-            <button class="youtube" onclick="youtube()"><img src="youtube.svg" alt="Youtube"></button>
+        <div id="main_text-container3">
+            <p class="main_text3">dummy text of the printing and dummy</p>
         </div>
-    </div>
-    <div id="subscribe-container">
-        <div id="subscribe-main-text">
-            <p class="main_text2" style="color: white;">Subscribe to our Blog post</p>
+        <div id="sub_text-container3">
+            <p class="sub_text" style="text-align: center">Lorem Ipsum is simply <span id="highlight">dummy text</span> of the printing and typesetting industry.<br>
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
         </div>
-        <div id="subscribe-sub-text">
-            <p class="sub_text2" style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
-                Lorem Ipsum has been the industry's standard dummy text </p>
+        <div id="image-container">
+            <img src="img_1.svg" alt="Image 1">
+            <img src="img_2.svg" alt="Image 2">
+            <img src="img_3.svg" alt="Image 3">
         </div>
-        <div id="email-container">
-            <img src="mail.svg" id="mail-icon" alt="Mail Icon">
-            <input type="email" id="email-input" placeholder="Enter your email">
-            <button id="subscribe-btn">Subscribe</button>
+        <div id="image-container2">
+            <img src="img_5.svg" alt="Image 5">
+            <img src="img_6.svg" alt="Image 6">
+            <img src="img_7.svg" alt="Image 7">
         </div>
-    </div>
-    <button id="scroll-top-btn">
-        <img src="scroll-top-btn.svg" alt="Scroll to Top">
-    </button>
+        <div id="more-container">
+            <p class="mid_text" style="text-align: center">Continue exploring HODU</p>
+            <button class="morebtn" onclick="morehandleClick()">Show more</button>
+        </div>
+        <hr id="border">
+        <div id="map_text-container">
+            <p class="main_text2">Where you’ll be</p>
+        </div>
+        <div id="sub_map_text-container">
+            <p class="sub_text">330, Cheomdan-ro, Jeju-si, Jeju-do, Republic of Korea</p>
+        </div>
+        <div id="map-container">
+            <div id="map"></div>
+        </div>
+        <img id="img8" src="img_8.svg" alt="Image 8">
+        <div id="footer">
+            <img id="logo2" src="logo.svg" alt="Logo2">
+            <div id="footer-icon">
+                <button class="blog" onclick="blog()"><img src="blog.svg" alt="Blog"></button>
+                <button class="insta" onclick="insta()"><img src="instagram.svg" alt="Insta"></button>
+                <button class="facebook" onclick="facebook()"><img src="facebook.svg" alt="Facebook"></button>
+                <button class="youtube" onclick="youtube()"><img src="youtube.svg" alt="Youtube"></button>
+            </div>
+        </div>
+        <div id="subscribe-container">
+            <div id="subscribe-main-text">
+                <p class="main_text2" style="color: white;">Subscribe to our Blog post</p>
+            </div>
+            <div id="subscribe-sub-text">
+                <p class="sub_text2" style="color: white;">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+                    Lorem Ipsum has been the industry's standard dummy text </p>
+            </div>
+            <div id="email-container">
+                <img src="mail.svg" id="mail-icon" alt="Mail Icon">
+                <input type="email" id="email-input" placeholder="Enter your email">
+                <button id="subscribe-btn">Subscribe</button>
+            </div>
+        </div>
+        <button id="scroll-top-btn">
+            <img src="scroll-top-btn.svg" alt="Scroll to Top">
+        </button>
 
-    <div id="popup-overlay">
-        <div id="popup">
-            <p>Thank you for subscribing!</p>
-            <button id="close-popup-btn">Close</button>
+        <div id="popup-overlay">
+            <div id="popup">
+                <p>Thank you for subscribing!</p>
+                <button id="close-popup-btn">Close</button>
+            </div>
         </div>
     </div>
 </body>

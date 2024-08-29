@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const header = document.getElementById('header');
     const container = document.getElementById('container');
     const imgcontainer = document.getElementById('image-container');
     const imgcontainer2 = document.getElementById('image-container2');
@@ -60,10 +61,16 @@ document.addEventListener("DOMContentLoaded", function() {
             containerWidth = screenWidth;
             containerHeight = containerWidth / aspectRatio;
         }
+        
+        header.style.width = `${containerWidth}px`;
+        header.style.height = `${(100/900)*containerHeight}px`;
+        
 
         // 기존 컨테이너 및 이미지 크기 설정
         container.style.width = `${containerWidth}px`;
-        container.style.height = `${containerHeight}px`;
+        container.style.height = `${(800/900)*containerHeight}px`;
+        container.style.paddingTop = `${(100 / 900) * containerHeight}px`;
+
 
         catImage.style.width = `${(415 / 1920) * containerWidth}px`;
         catImage.style.height = `${(766 / 900) * containerHeight}px`;
